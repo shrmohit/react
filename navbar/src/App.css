@@ -1,0 +1,187 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+p,li,a,button{
+  font-size: 1.7rem;
+  letter-spacing: .1rem;
+}
+
+button{
+  cursor: pointer;
+}
+
+.Header{
+  width: 100%; 
+  height: 10rem;
+  background-color: aqua;
+}
+
+.nav-container{
+  display: flex;
+  max-width: 100%;
+  width: 85%;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  height: 10rem ;
+
+}
+
+.nav-logo{
+  display: flex;
+  align-items: center;
+}
+.nav-logo-icon{
+  font-size: 40px
+}
+
+.nav-logo-text{
+  font-size: 20px
+}
+
+.nav-links a{
+  text-decoration: none;
+  margin-right: 10px;
+  color: black;
+}
+
+.btn-github{
+  border-radius: 50px;
+  padding: 10px 20px;
+  background-color: blueviolet;
+  color: white;
+}
+
+.ham-menu{
+  display: none;
+}
+
+@media screen and (max-width:700px){
+  .ham-menu{
+    display: inline-block;
+  }
+
+  .nav-web{
+    display: none;
+  }
+
+  .nav-mobile{
+    position: absolute;
+    top: 10rem;
+    width: 100%;
+    left: 0;
+    background-color: rgb(177, 135, 135);
+  }
+
+  .btn-github{
+    display: none;
+  }
+
+  .nav-mobile a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & a :first-child{
+    margin-top: 1.2rem;
+  }
+
+  & a:last-child{
+    margin-bottom: 1.2rem;
+  }
+  }
+}
+
+/* Herosection */
+.hero-containner{
+  width: 100%;
+  background-color: aquamarine;
+}
+
+.hero-section{
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  width: 85%;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.hero-title{
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+
+.hero-loop{
+  font-size: 2rem;
+  font-weight: 500;
+  display: inline;
+  padding-bottom: 2rem;
+}
+
+.hero-row{
+  font-size: 2rem;
+  font-weight: 600;
+  display: inline;
+}
+
+.hero-left{
+  width: 30%;
+}
+
+.hero-right{
+  width: 50%;
+}
+
+.resume-btn{
+  margin-top: 4rem;
+  padding: 20px 70px;
+  border-radius: 4rem;
+}
+
+.hero_img{
+  width: 400px;
+  height: 300px;
+  font-weight: 400px;
+  border: 5px solid black;
+  border-radius: 50%;
+}
+
+
+@media screen and (max-width:700px){
+  .hero-section{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 95%;
+  }
+
+  .hero_img{
+    display: flex;
+    align-items: center;
+    max-width: 50%;
+    height: 280px;
+    margin: auto;
+  }
+
+  .hero-right,.hero-left{
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+
+
+ 
+}
