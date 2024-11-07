@@ -24,7 +24,7 @@ function Herosection() {
               />
             </span>
           </h3>
-          <p className="hero_description">{Bio.description}</p>
+          <p className="hero-description">{Bio.description}</p>
           <a href={Bio.resume} target="_blank" rel="noopener noreferrer">
             <button className="resume-btn">Resume Button</button>
           </a>

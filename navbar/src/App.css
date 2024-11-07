@@ -27,7 +27,7 @@ button{
 .nav-container{
   display: flex;
   max-width: 100%;
-  width: 85%;
+  width: 80%;
   justify-content: space-between;
   align-items: center;
   margin: auto;
@@ -110,7 +110,7 @@ button{
   display: flex;
   justify-content: space-between;
   max-width: 100%;
-  width: 85%;
+  width: 80%;
   margin: auto;
   padding-top: 40px;
 }
@@ -124,7 +124,6 @@ button{
   font-size: 2rem;
   font-weight: 500;
   display: inline;
-  padding-bottom: 2rem;
 }
 
 .hero-row{
@@ -133,18 +132,23 @@ button{
   display: inline;
 }
 
+.hero-description{
+  margin-top: 3rem;
+}
+
 .hero-left{
-  width: 30%;
+  width: 40%;
 }
 
 .hero-right{
-  width: 50%;
+  width: 40%;
 }
 
 .resume-btn{
   margin-top: 4rem;
   padding: 20px 70px;
   border-radius: 4rem;
+  margin-bottom: 4rem;
 }
 
 .hero_img{
@@ -178,10 +182,159 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
+}
 
+/* SKILL */
 
+.skill-container{
+  width: 100%;
+  background-color: blueviolet;
+}
 
- 
+.skill-section{
+  width: 100%;
+  padding-top: 2rem;
+  margin: auto;
+}
+
+.skill-section h1,p{
+  text-align: center;
+}
+
+.skill-section P{
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+
+/* SKILLCARD */
+
+.skillcard-container{
+  max-width: 100%;
+  width: 80%;
+  margin: auto;
+}
+
+/* .skillcard-section{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.skillcard-inner{
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.skillcard-inner:hover {
+  transform: translateY(-5px);
+}
+
+.skillcard-inner h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.skillcard-inner div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0;
+  gap: 0.5rem; 
+}
+
+.skillcard-img {
+  height: 10px;
+  border-radius: 50%; 
+  object-fit: cover; 
+}
+
+.skillcard-inner div span {
+  font-size: 1.5rem;
+  color: #555;
+} */
+
+/* Skill card styling */
+.skillcard-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem; /* Space between cards */
+  justify-content: center;
+  padding: 2rem;
+}
+
+.skillcard-inner {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 280px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.skillcard-inner:hover {
+  transform: translateY(-8px);
+}
+
+/* Skill card title styling */
+.skillcard-inner h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+/* Flex layout for skill items */
+.skillcard-flex {
+  display: flex;
+  flex-wrap: wrap; /* Enables wrapping to the next row */
+  gap: 1rem; /* Space between skill items */
+  justify-content: space-between; /* Evenly distribute items */
+}
+
+/* Skill item inside the flex container */
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%; /* 3 items per row */
+  padding: 0.5rem;
+  transition: background-color 0.3s;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.skill-item:hover {
+  background-color: #eef2ff;
+}
+
+/* Skill icon styling */
+.skillcard-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+/* Skill name text */
+.skill-item-text {
+  font-size: 1.5rem;
+  color: #555;
+  font-weight: 500;
+  text-align: center;
 }
