@@ -11,7 +11,10 @@ function ProjectCard() {
             <h3 className="pcard-tag">{project.tags}</h3>
             <h1 className="pcard-title">{project.title}</h1>
             <h5 className="pcard-date">{project.date}</h5>
-            <p className="pcard-desc">{project.description}</p>
+            <p className="pcard-desc">
+            {project.description.length > 100
+            ? `${project.description.substring(0, 100)}...`
+            : project.description}</p>
           </div>
         </div>
       ))}

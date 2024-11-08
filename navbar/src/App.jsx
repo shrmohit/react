@@ -5,6 +5,7 @@ import Herosection from './Herosection'
 import Skill from './Skill'
 import Experience from './Experience'
 import Project from './Project'
+import Education from './Education'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
     <Skill/>
     <Experience/>
     <Project/>
+    <Education/>
     </>
   )
 }
