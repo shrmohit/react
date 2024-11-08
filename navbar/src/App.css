@@ -137,11 +137,11 @@ button{
 }
 
 .hero-left{
-  width: 40%;
+  width: 45%;
 }
 
 .hero-right{
-  width: 40%;
+  width: 50%;
 }
 
 .resume-btn{
@@ -215,54 +215,6 @@ button{
   margin: auto;
 }
 
-/* .skillcard-section{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: center;
-}
-
-.skillcard-inner{
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1.5rem;
-  width: 250px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.2s ease;
-}
-
-.skillcard-inner:hover {
-  transform: translateY(-5px);
-}
-
-.skillcard-inner h3 {
-  font-size: 1.8rem;
-  color: #333;
-  margin-bottom: 1rem;
-}
-
-.skillcard-inner div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0.5rem 0;
-  gap: 0.5rem; 
-}
-
-.skillcard-img {
-  height: 10px;
-  border-radius: 50%; 
-  object-fit: cover; 
-}
-
-.skillcard-inner div span {
-  font-size: 1.5rem;
-  color: #555;
-} */
-
 /* Skill card styling */
 .skillcard-section {
   display: flex;
@@ -303,6 +255,7 @@ button{
   flex-wrap: wrap; /* Enables wrapping to the next row */
   gap: 1rem; /* Space between skill items */
   justify-content: space-between; /* Evenly distribute items */
+ 
 }
 
 /* Skill item inside the flex container */
@@ -316,6 +269,7 @@ button{
   transition: background-color 0.3s;
   background-color: #f9f9f9;
   border-radius: 8px;
+  border: 1px solid black;
 }
 
 .skill-item:hover {
@@ -337,4 +291,87 @@ button{
   color: #555;
   font-weight: 500;
   text-align: center;
+}
+
+/* EXPERIENCE */
+
+.exper-container{
+  width: 100%;
+  background-color: chocolate;
+  /* height: 400px; */
+}
+
+.exper-section{
+  padding-top: 20px;
+  text-align: center;
+
+}
+
+.exper-section h1,p{
+  padding-bottom: 2rem;
+}
+
+/* PROJECT */
+
+.project-container{
+  background-color: rgb(201, 149, 70);
+  max-width: 100%;
+  margin: auto;
+}
+
+.project-section h1,p{
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+/* project-card */
+
+.projectcard-container{
+  max-width: 100%;
+}
+
+.projectcard-section{
+  max-width: 100%;
+  width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+
+}
+.projectcard-inner{
+  
+  border: 1px solid black;
+  max-width: 500px;
+  width: 300px;
+  margin: 1rem;
+  border-radius: 3rem;
+
+}
+
+.pcard-img{
+  width: 100%;
+  height: 200px;
+  padding: 2rem;
+  border-radius: 3rem;
+}
+
+.projectcard-item{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* .projectcard-item h3{
+  font-size: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+} */
+
+.pcard-tag{
+  row-gap: 1rem;
 }

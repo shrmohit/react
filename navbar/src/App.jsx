@@ -3,6 +3,8 @@ import './App.css'
 import Navbar from './Navbar'
 import Herosection from './Herosection'
 import Skill from './Skill'
+import Experience from './Experience'
+import Project from './Project'
 
 function App() {
 
@@ -11,6 +13,8 @@ function App() {
     <Navbar/>
     <Herosection/>
     <Skill/>
+    <Experience/>
+    <Project/>
     </>
   )
 }
