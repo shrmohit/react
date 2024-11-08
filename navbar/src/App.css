@@ -1,17 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+ 
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins",sans-serif;
 }
 
 html{
-  font-size: 62.5%;
-  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
-p,li,a,button{
+/* p,li,a,button{
   font-size: 1.7rem;
   letter-spacing: .1rem;
+} */
+
+body {
+  margin: 0px !important;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 button{
@@ -21,7 +29,8 @@ button{
 .Header{
   width: 100%; 
   height: 10rem;
-  background-color: aqua;
+  background-color: #080917;
+  /* position: fixed; */
 }
 
 .nav-container{
@@ -38,26 +47,31 @@ button{
 .nav-logo{
   display: flex;
   align-items: center;
+
 }
 .nav-logo-icon{
-  font-size: 40px
+  font-size: 40px;
+  color: white;
 }
 
 .nav-logo-text{
-  font-size: 20px
+  font-size: 20px;
+  color: white;
 }
 
 .nav-links a{
   text-decoration: none;
   margin-right: 10px;
-  color: black;
+  color: white;
 }
 
 .btn-github{
   border-radius: 50px;
-  padding: 10px 20px;
-  background-color: blueviolet;
-  color: white;
+  padding: 15px 40px;
+  background-color: #080917;
+  color: #854ce6;
+  border: none;
+  border: 1px solid #854ce6 ;
 }
 
 .ham-menu{
@@ -103,7 +117,7 @@ button{
 /* Herosection */
 .hero-containner{
   width: 100%;
-  background-color: aquamarine;
+  background-color:#080917;
 }
 
 .hero-section{
@@ -118,22 +132,27 @@ button{
 .hero-title{
   font-size: 30px;
   padding-bottom: 15px;
+  color: white;
 }
 
 .hero-loop{
   font-size: 2rem;
   font-weight: 500;
   display: inline;
+  color: white;
 }
 
 .hero-row{
   font-size: 2rem;
   font-weight: 600;
   display: inline;
+  color: #854ce6;
 }
 
 .hero-description{
   margin-top: 3rem;
+  color: #8E8F96;
+
 }
 
 .hero-left{
@@ -148,7 +167,13 @@ button{
   margin-top: 4rem;
   padding: 20px 70px;
   border-radius: 4rem;
-  margin-bottom: 4rem;
+  background: hsla(271, 100%, 50%, 1);
+  background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+  background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+  background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+
+  color: white;
+  border: none;
 }
 
 .hero_img{
@@ -189,22 +214,24 @@ button{
 
 .skill-container{
   width: 100%;
-  background-color: blueviolet;
+  background-color: #080917;
 }
 
 .skill-section{
   width: 100%;
-  padding-top: 2rem;
+  padding-top: 1rem;
   margin: auto;
 }
 
-.skill-section h1,p{
+.skill-section h1{
   text-align: center;
+  color: white;
+  font-size: 50px;
 }
 
 .skill-section P{
-  padding-top: 2rem;
-  padding-bottom: 5rem;
+  padding-top: 1rem;
+  color: white;
 }
 
 /* SKILLCARD */
@@ -245,7 +272,6 @@ button{
   color: #333;
   margin-bottom: 1.5rem;
   font-weight: 600;
-  text-transform: uppercase;
   letter-spacing: 0.05rem;
 }
 
@@ -254,17 +280,16 @@ button{
   display: flex;
   flex-wrap: wrap; /* Enables wrapping to the next row */
   gap: 1rem; /* Space between skill items */
-  justify-content: space-between; /* Evenly distribute items */
+  justify-content: space-between; 
  
 }
 
 /* Skill item inside the flex container */
 .skill-item {
   display: flex;
-  flex-direction: column;
+flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 30%; /* 3 items per row */
   padding: 0.5rem;
   transition: background-color 0.3s;
   background-color: #f9f9f9;
@@ -278,8 +303,8 @@ button{
 
 /* Skill icon styling */
 .skillcard-img {
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 0.5rem;
@@ -297,32 +322,54 @@ button{
 
 .exper-container{
   width: 100%;
-  background-color: chocolate;
+  background-color: #180C34;
   /* height: 400px; */
 }
 
 .exper-section{
   padding-top: 20px;
   text-align: center;
-
 }
 
-.exper-section h1,p{
-  padding-bottom: 2rem;
+.exper-section img{
+  width: 100px;
 }
 
+.exper-title{
+  color: white;
+  font-size: 50px;
+}
+
+.exper-section .exper-role{
+  font-size: 20px;
+}
+
+.exper-section h1{
+  font-size: 50px;
+}
+
+.exper-desc{
+  color: black;
+}
 /* PROJECT */
 
 .project-container{
-  background-color: rgb(201, 149, 70);
+  background-color: #080917;
   max-width: 100%;
   margin: auto;
 }
 
 .project-section h1,p{
   padding-bottom: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.project-section h1{
+  padding-bottom: 2rem;
   padding-top: 2rem;
   text-align: center;
+  color: white;
 }
 
 /* project-card */
@@ -339,19 +386,36 @@ button{
   display: flex;
   justify-content: center;
   cursor: pointer;
-
+  /* background-color: #180C34; */
 }
 .projectcard-inner{
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid black;
+  border: 1px solid #854ce6;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) ;
   overflow: hidden;
   transition: transform 0.3s ease;
   width: 300px;
   margin: 1rem;
-  border-radius: 3rem;
+  border-radius: 1rem;
+    background-color: #181823;
+}
+
+.project-titles{
+  font-size: 50px;
+}
+
+.pcard-tag{
+  color: #854ce6;
+}
+
+.pcard-date{
+  color: #555;
+}
+
+.pcard-desc{
+  color: #555;
 }
 
 .projectcard-inner:hover{
@@ -417,14 +481,14 @@ button{
 .educs-container{
   padding-top: 3rem;
   max-width: 100%;
-  background-color: cornflowerblue;
+  background-color: #080917;
   text-align: center;
 }
 
-
-  .educs-section .educ-title .educ-para{
-    
-  }
+.educ-title{
+  color: white;
+  font-size: 50px;
+}
 
 .educas-item-top{
   display: flex;
@@ -435,6 +499,9 @@ button{
   padding-bottom: 1rem;
 }
 
+.educas-item-bottom .educs-para{
+  color: black;
+}
 .educas-item-top img{
   width: 40px;
 }
@@ -443,5 +510,68 @@ button{
 text-align: left;
 }
 
-/* .educas-item-bottom p{
-} */
+/* CONTACT */
+
+.contact-container{
+  max-width: 100%;
+  background-color: #130F32;
+  padding-bottom: 40px;
+}
+
+.contact-section{
+  max-width: 100%;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.contact-section h1{
+  color: white;
+  font-size: 50px;
+}
+
+.form-section{
+  max-width: 100%;
+  width: 40%;
+  border: 2px solid #555;
+  margin: auto;
+  padding: 15px;
+  border-radius: 1.4rem;
+  
+}
+
+.form-section h1{
+  color: white;
+}
+
+.contactform-item form{
+  display: flex;
+  flex-direction: column;
+}
+
+.contactform-item .form-input{
+  padding: 20px;
+  border-radius: 1.4rem;
+  margin: 10px;
+  border: none;
+}
+
+.contactform-item .form-message{
+  padding-block: 50px;
+  border-radius: 1.4rem;
+  margin: 10px;
+  
+}
+
+.form-section button{
+  margin: 10px;
+  padding: 20px;
+  border-radius: 1.4rem;
+  border: none;
+  background: hsla(271, 100%, 50%, 1);
+  background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+  background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+  background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+}
+

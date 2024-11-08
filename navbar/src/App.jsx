@@ -6,6 +6,8 @@ import Skill from './Skill'
 import Experience from './Experience'
 import Project from './Project'
 import Education from './Education'
+import Contact from './Contact'
+import Footer from './Footer'
 
 function App() {
 
@@ -17,6 +19,8 @@ function App() {
     <Experience/>
     <Project/>
     <Education/>
+    <Contact/>
+    <Footer/>
     </>
   )
 }
