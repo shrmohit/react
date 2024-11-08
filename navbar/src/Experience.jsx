@@ -11,13 +11,13 @@ function Experience() {
   return (
     <div className="exper-container">
       <div className="exper-section">
-        <h1>Experience</h1>
+        <h1 className="exper-title">Experience</h1>
         <p>
           My work experience front-end developer and workinng on different
           projects.
         </p>
         <div className="expercard-container">
-          <VerticalTimeline linecolor="#000">
+          <VerticalTimeline linecolor="#fff">
             {experiences.map((experience) => (
               <VerticalTimelineElement
                 Key={experience.id}
