@@ -17,7 +17,7 @@ function Education() {
           education details are as follow
         </p>
         <div>
-            <VerticalTimeline lineColor="#000">
+            <VerticalTimeline lineColor="#fff">
             {education.map((education) =>(
                 <VerticalTimelineElement
                 key={education.id}

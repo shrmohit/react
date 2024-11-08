@@ -12,7 +12,7 @@ function EducationCard({ education }) {
       </div>
       <div className="educas-item-bottom">
         <h3>{education.grade}</h3>
-        <p>
+        <p className="educs-para">
         {education.desc.length > 100
             ? `${education.desc.substring(0, 100)}...`
             : education.desc}
