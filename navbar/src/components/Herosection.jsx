@@ -1,11 +1,11 @@
-import { Bio } from "./data/constant";
+import { Bio } from "../data/constant";
 import Typewriter from "typewriter-effect";
-import HeroImg from "./images/HeroImg.jpg";
+import HeroImg from "../images/HeroImg.jpg";
 import React from 'react';
 
 function Herosection() {
   return (
-    <div className='hero-containner'>
+    <div className='hero-containner' id="about">
       <div className='hero-section'>
         <div className="hero-left">
           <h1 className="hero-title">

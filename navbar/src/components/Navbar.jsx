@@ -18,14 +18,14 @@ function Navbar() {
               <DiCssdeck className="nav-logo-icon"/>
                 <span className="nav-logo-text">Portfolio</span>
             </div>
-
-          
+            
             <div className={`nav-links ${showMenu ? "nav-mobile" : "nav-web"}`}>
                 <a href="#about">About</a>
                 <a href="#skill">Skill</a>
                 <a href="#experience">Experience</a>
                 <a href="#project">Project</a>
                 <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
             </div>
 
             {/* <a href=""></a> */}

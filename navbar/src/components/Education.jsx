@@ -3,13 +3,13 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { education } from "./data/constant";
+import { education } from "../data/constant";
 import "react-vertical-timeline-component";
 import EducationCard from "./EducationCard";
 
 function Education() {
   return (
-    <div className="educs-container">
+    <div className="educs-container" id="contact">
       <div className="educs-section">
         <h1 className="educ-title">Education</h1>
         <p className="educ-para">

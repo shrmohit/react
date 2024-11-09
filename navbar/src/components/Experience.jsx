@@ -1,5 +1,5 @@
 import React from "react";
-import { experiences } from "./data/constant";
+import { experiences } from "../data/constant";
 import ExperienceCard from "./ExperienceCard";
 import {
   VerticalTimeline,
@@ -9,7 +9,7 @@ import "react-vertical-timeline-component/style.min.css";
 
 function Experience() {
   return (
-    <div className="exper-container">
+    <div className="exper-container" id="experience">
       <div className="exper-section">
         <h1 className="exper-title">Experience</h1>
         <p>

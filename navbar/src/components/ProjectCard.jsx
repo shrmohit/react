@@ -1,5 +1,5 @@
 import React from "react";
-import { projects } from "./data/constant";
+import { projects } from "../data/constant";
 
 function ProjectCard() {
   return (

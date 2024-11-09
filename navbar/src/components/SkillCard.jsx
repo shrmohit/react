@@ -1,5 +1,5 @@
 import React from 'react';
-import {skills} from './data/constant'
+import {skills} from '../data/constant'
 
 function SkillCard() {
   return (

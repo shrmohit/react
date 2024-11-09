@@ -9,17 +9,16 @@
 
 html{
   scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
 }
-
-/* p,li,a,button{
-  font-size: 1.7rem;
-  letter-spacing: .1rem;
-} */
 
 body {
   margin: 0px !important;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  padding-top: 90px;
 }
 
 button{
@@ -27,10 +26,13 @@ button{
 }
 
 .Header{
-  width: 100%; 
-  height: 10rem;
+  width: 100%;
+  height: 6rem;
   background-color: #080917;
-  /* position: fixed; */
+  margin: auto;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
 }
 
 .nav-container{
@@ -40,7 +42,7 @@ button{
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  height: 10rem ;
+  height: 6rem ;
 
 }
 
@@ -56,21 +58,26 @@ button{
 
 .nav-logo-text{
   font-size: 20px;
-  color: white;
+  color: #854ce6;
 }
 
 .nav-links a{
   text-decoration: none;
-  margin-right: 10px;
+  margin-right: 15px;
   color: white;
+}
+
+.nav-links a:hover{
+  color: #854ce6;
 }
 
 .btn-github{
   border-radius: 50px;
-  padding: 15px 40px;
+  padding: 10px 35px;
   background-color: #080917;
   color: #854ce6;
   border: none;
+  font-size: 20px;
   border: 1px solid #854ce6 ;
 }
 
@@ -123,6 +130,7 @@ button{
 .hero-section{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   max-width: 100%;
   width: 80%;
   margin: auto;
@@ -150,7 +158,7 @@ button{
 }
 
 .hero-description{
-  margin-top: 3rem;
+  margin-top: 2rem;
   color: #8E8F96;
 
 }
@@ -164,7 +172,7 @@ button{
 }
 
 .resume-btn{
-  margin-top: 4rem;
+  margin-top: 2rem;
   padding: 20px 70px;
   border-radius: 4rem;
   background: hsla(271, 100%, 50%, 1);
@@ -178,9 +186,9 @@ button{
 
 .hero_img{
   width: 400px;
-  height: 300px;
+  height: 350px;
   font-weight: 400px;
-  border: 5px solid black;
+  border: 5px solid #854ce6;
   border-radius: 50%;
 }
 
@@ -213,7 +221,7 @@ button{
 /* SKILL */
 
 .skill-container{
-  width: 100%;
+  max-width: 100%;
   background-color: #080917;
 }
 
@@ -252,7 +260,7 @@ button{
 }
 
 .skillcard-inner {
-  background-color: #ffffff;
+  background-color: #180C34;
   border: 1px solid #e0e0e0;
   border-radius: 10px;
   padding: 2rem;
@@ -269,7 +277,7 @@ button{
 /* Skill card title styling */
 .skillcard-inner h3 {
   font-size: 2rem;
-  color: #333;
+  color: white;
   margin-bottom: 1.5rem;
   font-weight: 600;
   letter-spacing: 0.05rem;
@@ -292,14 +300,15 @@ flex-direction: row;
   justify-content: center;
   padding: 0.5rem;
   transition: background-color 0.3s;
-  background-color: #f9f9f9;
+  background-color: white;
   border-radius: 8px;
-  border: 1px solid black;
+  border: 1px solid white;
 }
 
-.skill-item:hover {
+/* .skill-item:hover {
   background-color: #eef2ff;
-}
+  box-shadow: 2px 5px 10px white;
+} */
 
 /* Skill icon styling */
 .skillcard-img {
@@ -574,4 +583,3 @@ text-align: left;
   background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
   background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
 }
-
